@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Aventura Carioca</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="">
+            <p>Durante uma visita ao Rio de Janeiro, você encontra uma antiga carta em um mercado de antiguidades. A carta menciona uma lenda sobre um tesouro escondido na cidade, que pode ser encontrado seguindo pistas misteriosas. Empolgado, você decide embarcar nessa aventura!</p>
+            <button class="btn-proximo" data-proximo="1">Explorar o Jardim Botânico</button>
+            <button class="btn-proximo" data-proximo="2">Visitar o Cristo Redentor</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>No Jardim Botânico, você se depara com uma pista escondida em um antigo monumento. A pista sugere que o próximo passo é procurar uma inscrição em um famoso mirante da cidade.</p>
+            <button class="btn-proximo" data-proximo="3">Ir ao Mirante Dona Marta</button>
+            <button class="btn-proximo" data-proximo="4">Desistir e ir para a praia</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Ao visitar o Cristo Redentor, você descobre uma pista oculta em uma das estátuas. A pista leva a um famoso mercado de rua na zona sul do Rio.</p>
+            <button class="btn-proximo" data-proximo="5">Explorar o mercado de rua</button>
+            <button class="btn-proximo" data-proximo="6">Passear pela Lapa</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>No Mirante Dona Marta, você encontra uma gravação em uma pedra antiga que revela que a próxima pista está escondida nas cavernas de Santa Teresa.</p>
+            <button class="btn-proximo" data-proximo="7">Visitar as cavernas de Santa Teresa</button>
+        </div>
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4-desistir.png" alt="imagem de desistir da aventura">
+            <p>Você decide que a aventura é muito complicada e opta por relaxar na praia. Sempre fica a dúvida do que poderia ter descoberto.</p>
+        </div>
+        <div class="passo" id="passo-5">
+            <p>No mercado de rua, você encontra um antigo mapa escondido entre as barracas. O mapa indica que a próxima pista está nas cavernas de Santa Teresa.</p>
+            <button class="btn-proximo" data-proximo="7">Visitar as cavernas de Santa Teresa</button>
+        </div>
+        <div class="passo" id="passo-6">
+            <p>Explorando a Lapa, você encontra algumas informações interessantes, mas nenhuma pista direta sobre o tesouro. Decide então voltar ao mercado de rua.</p>
+            <button class="btn-proximo" data-proximo="5">Voltar ao mercado de rua</button>
+        </div>
+        <div class="passo" id="passo-7">
+            <p>Nas cavernas de Santa Teresa, você encontra inscrições antigas que revelam a localização do tesouro: um local escondido na Floresta da Tijuca.</p>
+            <button class="btn-proximo" data-proximo="8">Explorar a Floresta da Tijuca</button>
+        </div>
+        <div class="passo" id="passo-8">
+            <p>Na Floresta da Tijuca, você descobre uma caverna secreta que leva a um salão escondido cheio de tesouros históricos. Você decide proteger e estudar esse local incrível.</p>
+            <img src="img/cenario-passo8-tesouro.png" alt="encontrando o tesouro escondido na Floresta da Tijuca">
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
